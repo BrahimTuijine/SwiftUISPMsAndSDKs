@@ -11,6 +11,8 @@
 		FA8FAB742D1CB1FC00FFE5CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8FAB732D1CB1FC00FFE5CF /* ContentView.swift */; };
 		FA8FAB762D1CB1FD00FFE5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8FAB752D1CB1FD00FFE5CF /* Assets.xcassets */; };
 		FA8FAB792D1CB1FD00FFE5CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8FAB782D1CB1FD00FFE5CF /* Preview Assets.xcassets */; };
+		FA8FAB812D1CB55200FFE5CF /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FA8FAB802D1CB55200FFE5CF /* SDWebImageSwiftUI */; };
+		FA8FAB832D1CB5BD00FFE5CF /* SDWebImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8FAB822D1CB5BD00FFE5CF /* SDWebImageScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		FA8FAB732D1CB1FC00FFE5CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA8FAB752D1CB1FD00FFE5CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA8FAB782D1CB1FD00FFE5CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA8FAB822D1CB5BD00FFE5CF /* SDWebImageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWebImageScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8FAB812D1CB55200FFE5CF /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				FA8FAB712D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKsApp.swift */,
 				FA8FAB732D1CB1FC00FFE5CF /* ContentView.swift */,
+				FA8FAB822D1CB5BD00FFE5CF /* SDWebImageScreen.swift */,
 				FA8FAB752D1CB1FD00FFE5CF /* Assets.xcassets */,
 				FA8FAB772D1CB1FD00FFE5CF /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = SwiftUISPMsAndSDKs;
+			packageProductDependencies = (
+				FA8FAB802D1CB55200FFE5CF /* SDWebImageSwiftUI */,
+			);
 			productName = SwiftUISPMsAndSDKs;
 			productReference = FA8FAB6E2D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKs.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = FA8FAB652D1CB1FC00FFE5CF;
+			packageReferences = (
+				FA8FAB7F2D1CB55200FFE5CF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = FA8FAB6F2D1CB1FC00FFE5CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				FA8FAB742D1CB1FC00FFE5CF /* ContentView.swift in Sources */,
 				FA8FAB722D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKsApp.swift in Sources */,
+				FA8FAB832D1CB5BD00FFE5CF /* SDWebImageScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA8FAB7F2D1CB55200FFE5CF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA8FAB802D1CB55200FFE5CF /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA8FAB7F2D1CB55200FFE5CF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA8FAB662D1CB1FC00FFE5CF /* Project object */;
 }
