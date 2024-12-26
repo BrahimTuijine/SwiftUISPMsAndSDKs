@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA8ED8472D1D779A004F72D6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8ED8462D1D779A004F72D6 /* ImageLoader.swift */; };
+		FA8ED8492D1D77F0004F72D6 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8ED8482D1D77F0004F72D6 /* ImagePrefetcher.swift */; };
+		FA8ED84D2D1D9F1F004F72D6 /* KingfisherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8ED84C2D1D9F1F004F72D6 /* KingfisherScreen.swift */; };
+		FA8ED8502D1DA084004F72D6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA8ED84F2D1DA084004F72D6 /* Kingfisher */; };
 		FA8FAB722D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8FAB712D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKsApp.swift */; };
 		FA8FAB742D1CB1FC00FFE5CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8FAB732D1CB1FC00FFE5CF /* ContentView.swift */; };
 		FA8FAB762D1CB1FD00FFE5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8FAB752D1CB1FD00FFE5CF /* Assets.xcassets */; };
@@ -16,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA8ED8462D1D779A004F72D6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		FA8ED8482D1D77F0004F72D6 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePrefetcher.swift; sourceTree = "<group>"; };
+		FA8ED84C2D1D9F1F004F72D6 /* KingfisherScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherScreen.swift; sourceTree = "<group>"; };
 		FA8FAB6E2D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUISPMsAndSDKs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8FAB712D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISPMsAndSDKsApp.swift; sourceTree = "<group>"; };
 		FA8FAB732D1CB1FC00FFE5CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8ED8502D1DA084004F72D6 /* Kingfisher in Frameworks */,
 				FA8FAB812D1CB55200FFE5CF /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,6 +44,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA8ED8452D1D76A3004F72D6 /* ImageLoading */ = {
+			isa = PBXGroup;
+			children = (
+				FA8ED84B2D1D78AB004F72D6 /* SPMs */,
+				FA8ED84A2D1D789C004F72D6 /* Generic */,
+			);
+			path = ImageLoading;
+			sourceTree = "<group>";
+		};
+		FA8ED84A2D1D789C004F72D6 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				FA8ED8462D1D779A004F72D6 /* ImageLoader.swift */,
+				FA8ED8482D1D77F0004F72D6 /* ImagePrefetcher.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		FA8ED84B2D1D78AB004F72D6 /* SPMs */ = {
+			isa = PBXGroup;
+			children = (
+				FA8FAB822D1CB5BD00FFE5CF /* SDWebImageScreen.swift */,
+				FA8ED84C2D1D9F1F004F72D6 /* KingfisherScreen.swift */,
+			);
+			path = SPMs;
+			sourceTree = "<group>";
+		};
 		FA8FAB652D1CB1FC00FFE5CF = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +92,7 @@
 			children = (
 				FA8FAB712D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKsApp.swift */,
 				FA8FAB732D1CB1FC00FFE5CF /* ContentView.swift */,
-				FA8FAB822D1CB5BD00FFE5CF /* SDWebImageScreen.swift */,
+				FA8ED8452D1D76A3004F72D6 /* ImageLoading */,
 				FA8FAB752D1CB1FD00FFE5CF /* Assets.xcassets */,
 				FA8FAB772D1CB1FD00FFE5CF /* Preview Content */,
 			);
@@ -90,6 +125,7 @@
 			name = SwiftUISPMsAndSDKs;
 			packageProductDependencies = (
 				FA8FAB802D1CB55200FFE5CF /* SDWebImageSwiftUI */,
+				FA8ED84F2D1DA084004F72D6 /* Kingfisher */,
 			);
 			productName = SwiftUISPMsAndSDKs;
 			productReference = FA8FAB6E2D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKs.app */;
@@ -121,6 +157,7 @@
 			mainGroup = FA8FAB652D1CB1FC00FFE5CF;
 			packageReferences = (
 				FA8FAB7F2D1CB55200FFE5CF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				FA8ED84E2D1DA084004F72D6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = FA8FAB6F2D1CB1FC00FFE5CF /* Products */;
 			projectDirPath = "";
@@ -149,7 +186,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8FAB742D1CB1FC00FFE5CF /* ContentView.swift in Sources */,
+				FA8ED84D2D1D9F1F004F72D6 /* KingfisherScreen.swift in Sources */,
 				FA8FAB722D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKsApp.swift in Sources */,
+				FA8ED8472D1D779A004F72D6 /* ImageLoader.swift in Sources */,
+				FA8ED8492D1D77F0004F72D6 /* ImagePrefetcher.swift in Sources */,
 				FA8FAB832D1CB5BD00FFE5CF /* SDWebImageScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +396,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FA8ED84E2D1DA084004F72D6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.3;
+			};
+		};
 		FA8FAB7F2D1CB55200FFE5CF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
@@ -367,6 +415,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FA8ED84F2D1DA084004F72D6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA8ED84E2D1DA084004F72D6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		FA8FAB802D1CB55200FFE5CF /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FA8FAB7F2D1CB55200FFE5CF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
