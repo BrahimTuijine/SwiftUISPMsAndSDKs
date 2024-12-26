@@ -34,6 +34,21 @@ fileprivate struct SDWebImageLoader: View {
     }
 }
 
+final class ImagePefetcher {
+    static let instance = ImagePefetcher()
+    private let prefetcher = SDWebImagePrefetcher()
+    
+    private init() {}
+    
+    func startPrefetching(urls: [URL]) -> Void {
+        prefetcher.prefetchURLs(urls)
+    }
+    
+    func stopPrefetching() -> Void {
+        prefetcher.cancelPrefetching()
+    }
+}
+
 //https://picsum.photos/id/237/200/300
 struct SDWebImageScreen: View {
     var body: some View {
