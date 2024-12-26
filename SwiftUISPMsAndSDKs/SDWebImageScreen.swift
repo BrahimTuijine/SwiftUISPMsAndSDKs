@@ -8,8 +8,14 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
+struct ImageLoader: View {
+    let imageUrl: String
+    var body: some View {
+        SDWebImageLoader(imageUrl: imageUrl)
+    }
+}
 
-struct SDWebImageLoader: View {
+fileprivate struct SDWebImageLoader: View {
     let imageUrl: String
     var body: some View {
         WebImage(url: URL(string: imageUrl))
@@ -31,7 +37,7 @@ struct SDWebImageLoader: View {
 //https://picsum.photos/id/237/200/300
 struct SDWebImageScreen: View {
     var body: some View {
-        SDWebImageLoader(imageUrl: "https://picsum.photos/id/237/200/300")
+        ImageLoader(imageUrl: "https://picsum.photos/id/237/200/300")
     }
 }
 
