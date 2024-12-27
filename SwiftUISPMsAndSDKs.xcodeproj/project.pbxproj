@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA32067D2D1EF42F008159E8 /* KeychainsSwiftScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32067C2D1EF42F008159E8 /* KeychainsSwiftScreen.swift */; };
+		FA3206802D1EF662008159E8 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA32067F2D1EF662008159E8 /* KeychainSwift */; };
 		FA8ED8472D1D779A004F72D6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8ED8462D1D779A004F72D6 /* ImageLoader.swift */; };
 		FA8ED8492D1D77F0004F72D6 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8ED8482D1D77F0004F72D6 /* ImagePrefetcher.swift */; };
 		FA8ED84D2D1D9F1F004F72D6 /* KingfisherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8ED84C2D1D9F1F004F72D6 /* KingfisherScreen.swift */; };
@@ -20,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA32067C2D1EF42F008159E8 /* KeychainsSwiftScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainsSwiftScreen.swift; sourceTree = "<group>"; };
 		FA8ED8462D1D779A004F72D6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		FA8ED8482D1D77F0004F72D6 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePrefetcher.swift; sourceTree = "<group>"; };
 		FA8ED84C2D1D9F1F004F72D6 /* KingfisherScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherScreen.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3206802D1EF662008159E8 /* KeychainSwift in Frameworks */,
 				FA8ED8502D1DA084004F72D6 /* Kingfisher in Frameworks */,
 				FA8FAB812D1CB55200FFE5CF /* SDWebImageSwiftUI in Frameworks */,
 			);
@@ -44,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA32067B2D1EF3F8008159E8 /* Keychains */ = {
+			isa = PBXGroup;
+			children = (
+				FA32067C2D1EF42F008159E8 /* KeychainsSwiftScreen.swift */,
+			);
+			path = Keychains;
+			sourceTree = "<group>";
+		};
 		FA8ED8452D1D76A3004F72D6 /* ImageLoading */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				FA8FAB712D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKsApp.swift */,
+				FA32067B2D1EF3F8008159E8 /* Keychains */,
 				FA8FAB732D1CB1FC00FFE5CF /* ContentView.swift */,
 				FA8ED8452D1D76A3004F72D6 /* ImageLoading */,
 				FA8FAB752D1CB1FD00FFE5CF /* Assets.xcassets */,
@@ -126,6 +139,7 @@
 			packageProductDependencies = (
 				FA8FAB802D1CB55200FFE5CF /* SDWebImageSwiftUI */,
 				FA8ED84F2D1DA084004F72D6 /* Kingfisher */,
+				FA32067F2D1EF662008159E8 /* KeychainSwift */,
 			);
 			productName = SwiftUISPMsAndSDKs;
 			productReference = FA8FAB6E2D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKs.app */;
@@ -158,6 +172,7 @@
 			packageReferences = (
 				FA8FAB7F2D1CB55200FFE5CF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				FA8ED84E2D1DA084004F72D6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FA32067E2D1EF662008159E8 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			productRefGroup = FA8FAB6F2D1CB1FC00FFE5CF /* Products */;
 			projectDirPath = "";
@@ -190,6 +205,7 @@
 				FA8FAB722D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKsApp.swift in Sources */,
 				FA8ED8472D1D779A004F72D6 /* ImageLoader.swift in Sources */,
 				FA8ED8492D1D77F0004F72D6 /* ImagePrefetcher.swift in Sources */,
+				FA32067D2D1EF42F008159E8 /* KeychainsSwiftScreen.swift in Sources */,
 				FA8FAB832D1CB5BD00FFE5CF /* SDWebImageScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +412,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FA32067E2D1EF662008159E8 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
 		FA8ED84E2D1DA084004F72D6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
@@ -415,6 +439,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FA32067F2D1EF662008159E8 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA32067E2D1EF662008159E8 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
 		FA8ED84F2D1DA084004F72D6 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FA8ED84E2D1DA084004F72D6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
