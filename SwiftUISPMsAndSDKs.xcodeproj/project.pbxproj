@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FA32067D2D1EF42F008159E8 /* KeychainsSwiftScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32067C2D1EF42F008159E8 /* KeychainsSwiftScreen.swift */; };
 		FA3206802D1EF662008159E8 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA32067F2D1EF662008159E8 /* KeychainSwift */; };
+		FA3206832D1EFE34008159E8 /* SwiftfullUIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3206822D1EFE34008159E8 /* SwiftfullUIScreen.swift */; };
+		FA3206862D1EFE74008159E8 /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = FA3206852D1EFE74008159E8 /* SwiftfulUI */; };
 		FA8ED8472D1D779A004F72D6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8ED8462D1D779A004F72D6 /* ImageLoader.swift */; };
 		FA8ED8492D1D77F0004F72D6 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8ED8482D1D77F0004F72D6 /* ImagePrefetcher.swift */; };
 		FA8ED84D2D1D9F1F004F72D6 /* KingfisherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8ED84C2D1D9F1F004F72D6 /* KingfisherScreen.swift */; };
@@ -19,10 +21,13 @@
 		FA8FAB792D1CB1FD00FFE5CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8FAB782D1CB1FD00FFE5CF /* Preview Assets.xcassets */; };
 		FA8FAB812D1CB55200FFE5CF /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FA8FAB802D1CB55200FFE5CF /* SDWebImageSwiftUI */; };
 		FA8FAB832D1CB5BD00FFE5CF /* SDWebImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8FAB822D1CB5BD00FFE5CF /* SDWebImageScreen.swift */; };
+		FAFA8FF32D2BE83F00B7319A /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = FAFA8FF22D2BE83F00B7319A /* SwiftfulRouting */; };
+		FAFA8FF62D2BE87900B7319A /* SwiftfulRoutingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA8FF52D2BE87900B7319A /* SwiftfulRoutingScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA32067C2D1EF42F008159E8 /* KeychainsSwiftScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainsSwiftScreen.swift; sourceTree = "<group>"; };
+		FA3206822D1EFE34008159E8 /* SwiftfullUIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfullUIScreen.swift; sourceTree = "<group>"; };
 		FA8ED8462D1D779A004F72D6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		FA8ED8482D1D77F0004F72D6 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePrefetcher.swift; sourceTree = "<group>"; };
 		FA8ED84C2D1D9F1F004F72D6 /* KingfisherScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherScreen.swift; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		FA8FAB752D1CB1FD00FFE5CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA8FAB782D1CB1FD00FFE5CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA8FAB822D1CB5BD00FFE5CF /* SDWebImageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWebImageScreen.swift; sourceTree = "<group>"; };
+		FAFA8FF52D2BE87900B7319A /* SwiftfulRoutingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulRoutingScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +45,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3206862D1EFE74008159E8 /* SwiftfulUI in Frameworks */,
 				FA3206802D1EF662008159E8 /* KeychainSwift in Frameworks */,
 				FA8ED8502D1DA084004F72D6 /* Kingfisher in Frameworks */,
 				FA8FAB812D1CB55200FFE5CF /* SDWebImageSwiftUI in Frameworks */,
+				FAFA8FF32D2BE83F00B7319A /* SwiftfulRouting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +62,14 @@
 				FA32067C2D1EF42F008159E8 /* KeychainsSwiftScreen.swift */,
 			);
 			path = Keychains;
+			sourceTree = "<group>";
+		};
+		FA3206812D1EFD7F008159E8 /* UIHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA3206822D1EFE34008159E8 /* SwiftfullUIScreen.swift */,
+			);
+			path = UIHelpers;
 			sourceTree = "<group>";
 		};
 		FA8ED8452D1D76A3004F72D6 /* ImageLoading */ = {
@@ -103,8 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				FA8FAB712D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKsApp.swift */,
-				FA32067B2D1EF3F8008159E8 /* Keychains */,
+				FAFA8FF42D2BE85A00B7319A /* Routing */,
 				FA8FAB732D1CB1FC00FFE5CF /* ContentView.swift */,
+				FA3206812D1EFD7F008159E8 /* UIHelpers */,
+				FA32067B2D1EF3F8008159E8 /* Keychains */,
 				FA8ED8452D1D76A3004F72D6 /* ImageLoading */,
 				FA8FAB752D1CB1FD00FFE5CF /* Assets.xcassets */,
 				FA8FAB772D1CB1FD00FFE5CF /* Preview Content */,
@@ -118,6 +136,14 @@
 				FA8FAB782D1CB1FD00FFE5CF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAFA8FF42D2BE85A00B7319A /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA8FF52D2BE87900B7319A /* SwiftfulRoutingScreen.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +166,8 @@
 				FA8FAB802D1CB55200FFE5CF /* SDWebImageSwiftUI */,
 				FA8ED84F2D1DA084004F72D6 /* Kingfisher */,
 				FA32067F2D1EF662008159E8 /* KeychainSwift */,
+				FA3206852D1EFE74008159E8 /* SwiftfulUI */,
+				FAFA8FF22D2BE83F00B7319A /* SwiftfulRouting */,
 			);
 			productName = SwiftUISPMsAndSDKs;
 			productReference = FA8FAB6E2D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKs.app */;
@@ -173,6 +201,8 @@
 				FA8FAB7F2D1CB55200FFE5CF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				FA8ED84E2D1DA084004F72D6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				FA32067E2D1EF662008159E8 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				FA3206842D1EFE74008159E8 /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+				FAFA8FF12D2BE83F00B7319A /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
 			);
 			productRefGroup = FA8FAB6F2D1CB1FC00FFE5CF /* Products */;
 			projectDirPath = "";
@@ -200,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3206832D1EFE34008159E8 /* SwiftfullUIScreen.swift in Sources */,
 				FA8FAB742D1CB1FC00FFE5CF /* ContentView.swift in Sources */,
 				FA8ED84D2D1D9F1F004F72D6 /* KingfisherScreen.swift in Sources */,
 				FA8FAB722D1CB1FC00FFE5CF /* SwiftUISPMsAndSDKsApp.swift in Sources */,
@@ -207,6 +238,7 @@
 				FA8ED8492D1D77F0004F72D6 /* ImagePrefetcher.swift in Sources */,
 				FA32067D2D1EF42F008159E8 /* KeychainsSwiftScreen.swift in Sources */,
 				FA8FAB832D1CB5BD00FFE5CF /* SDWebImageScreen.swift in Sources */,
+				FAFA8FF62D2BE87900B7319A /* SwiftfulRoutingScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +452,14 @@
 				minimumVersion = 24.0.0;
 			};
 		};
+		FA3206842D1EFE74008159E8 /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 		FA8ED84E2D1DA084004F72D6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
@@ -436,6 +476,14 @@
 				minimumVersion = 3.1.3;
 			};
 		};
+		FAFA8FF12D2BE83F00B7319A /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -443,6 +491,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FA32067E2D1EF662008159E8 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		FA3206852D1EFE74008159E8 /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3206842D1EFE74008159E8 /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
 		};
 		FA8ED84F2D1DA084004F72D6 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -453,6 +506,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FA8FAB7F2D1CB55200FFE5CF /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		FAFA8FF22D2BE83F00B7319A /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAFA8FF12D2BE83F00B7319A /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
